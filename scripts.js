@@ -1,7 +1,6 @@
 
 // Descobre quem é o butão
 let butao = document.querySelector(".gerar")
-let chave = "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"
 let endereco = "https://api.groq.com/openai/v1/chat/completions"
 let blococod = document.querySelector(".bloco-cod")
 let resultcod = document.querySelector(".result-cod")
@@ -15,7 +14,7 @@ async function gerarcodigo() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "authorization": "bearer " + chave
+            "authorization": "bearer " 
         },
         body: JSON.stringify({
             model: "llama-3.3-70b-versatile",
@@ -43,6 +42,6 @@ async function gerarcodigo() {
 // Ficar de olho no butão quando clicar pra chamar o codigo
 butao.addEventListener("click", gerarcodigo)
 
-console.log(butao, gerarcodigo)
+console.log()
 
 
