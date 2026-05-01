@@ -40,3 +40,8 @@ textarea{
     outline: none;
     color: blueviolet;
 }
+
+img{
+    width: 500px;
+    height: 250px;
+}
